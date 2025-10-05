@@ -3,45 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>js-app</title>
   </head>
   <body>
-    <div id="app">
-      <header class="header">
-      <h1 class="title">Мои привычки</h1>
-    </header>
-    
-    <main class="main">
-      <form class="habit-form">
-        <input 
-          type="text" 
-          class="input" 
-          placeholder="Название привычки..." 
-        />
-        <button class="button" type="submit">Добавить</button>
-      </form>
-
-      <div class="habits-list">
-        <div class="habit-empty">
-          <span class="habit-item__text">Вы ещё не добавили ни одну привычку</span>
-        </div>
-        <div class="habit-item">
-          <span class="habit-item__text">Читать 20 минут</span>
-          <div class="habit-item__actions">
-            <button class="button button--complete">✅</button>
-            <button class="button button--delete">❌</button>
-          </div>
-        </div>
-        <div class="habit-item habit-item--done">
-          <span class="habit-item__text">Делать зарядку</span>
-          <div class="habit-item__actions">
-            <button class="button button--complete">✅</button>
-            <button class="button button--delete">❌</button>
-          </div>
-        </div>
+    <div id="app" class="container">
+      <div class="exel">
+        <div class="exel__header"></div>
+        <div class="exel__toolbar"></div>
+        <div class="exel__formula"></div>
+        <div class="exel__table"></div>
       </div>
-    </main>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
