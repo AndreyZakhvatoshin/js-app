@@ -1,8 +1,8 @@
+@use 'header';
+@use 'table';
+@use 'toolbar';
+@use 'formula';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import 'header';
-@import 'table';
-@import 'toolbar';
-@import 'formula';
 
 * {
   margin: 0;
@@ -13,15 +13,10 @@
 body {
   font-family: Roboto, sans-serif;
   background-color: #f4f7f6;
-  color: #333;
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
 }
 
 .exel {
   position: relative;
-  background-color: black;
 }
 
 /* Контейнер всего приложения */

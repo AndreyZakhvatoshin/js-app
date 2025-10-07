@@ -1,5 +1,7 @@
-@import 'variables';
-@import 'mixins';
+@use 'globals';
 
 .exel__toolbar {
+  position: absolute;
+  background: darkblue;
+  height: globals.$toolbar-height;
 }
