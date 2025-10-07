@@ -2,6 +2,16 @@
 
 .exel__toolbar {
   position: absolute;
-  background: darkblue;
   height: globals.$toolbar-height;
+  left: 0;
+  right: 0;
+  top: globals.$header-height;
+  border-top: 1px solid globals.$border-color;
+  border-bottom: 1px solid globals.$border-color;
+  padding: 7px 10px;
+  display: flex;
+
+  .button {
+    @include globals.button(green);
+  }
 }
