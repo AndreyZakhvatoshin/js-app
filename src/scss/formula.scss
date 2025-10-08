@@ -1,5 +1,29 @@
-@use 'variables';
-@use 'mixins';
+@use 'globals';
 
 .exel__formula {
+  position: absolute;
+  height: globals.$formula-height;
+  left: 0;
+  right: 0;
+  top: globals.$header-height + globals.$toolbar-height;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid globals.$border-color;
+
+  .info {
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+    border-right: 1px solid globals.$border-color;
+    min-width: globals.$info-cell_width;
+  }
+
+  .input {
+    padding: 4px;
+    font-size: 12px;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    color: #000;
+  }
 }
