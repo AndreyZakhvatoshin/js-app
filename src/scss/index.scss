@@ -2,6 +2,7 @@
 @use 'table';
 @use 'toolbar';
 @use 'formula';
+@use 'dashboard';
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
@@ -17,6 +18,10 @@ body {
 
 .exel {
   position: relative;
+  color: #888;
+  height: 100%;
+  max-width: 100%;
+  font-size: 0.8rem;
 }
 
 /* Контейнер всего приложения */
